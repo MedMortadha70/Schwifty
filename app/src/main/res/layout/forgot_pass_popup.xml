@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp"
+    android:id="@+id/dialogForgot">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/white_box">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/forgotTitle"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Password Reset"
+                android:fontFamily="@font/oswald_bold"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#8D7B68"
+                android:layout_margin="10dp"/>
+
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/emailBox"
+                android:hint="Enter Your Email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#fff"
+                android:padding="20dp"
+                android:background="@drawable/text_box"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="20dp"
+                android:maxLines="1"
+                android:layout_margin="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="20dp"
+                android:gravity="center">
+
+                <Button
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btnCancel"
+                    android:text="Cancel"
+                    android:fontFamily="@font/oswald_bold"
+                    android:backgroundTint="#A4907C"
+                    android:textColor="#fff"/>
+
+                <Button
+                    android:gravity="center"
+                    android:layout_marginStart="35dp"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btnSend"
+                    android:text="Submit"
+                    android:fontFamily="@font/oswald_bold"
+                    android:backgroundTint="#A4907C"
+                    android:textColor="#fff"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
